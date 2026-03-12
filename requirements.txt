@@ -2,7 +2,7 @@ Flask==2.2.5
 flask-login==0.6.2
 flask-session==0.4.0
 flask-sqlalchemy==3.0.3
-pyodbc==4.0.39
+pyodbc==5.1.0
 SQLAlchemy==2.0.7
 werkzeug==2.2.3
 msal==1.22.0
