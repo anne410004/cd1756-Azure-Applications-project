@@ -1,12 +1,40 @@
-# Write-up Template
+# \# Article CMS - VM vs App Service Analysis
 
-### Analyze, choose, and justify the appropriate resource option for deploying the app.
+# 
 
-*For **both** a VM or App Service solution for the CMS app:*
-- *Analyze costs, scalability, availability, and workflow*
-- *Choose the appropriate solution (VM or App Service) for deploying the app*
-- *Justify your choice*
+# \## VM vs App Service Comparison
 
-### Assess app changes that would change your decision.
+# 
 
-*Detail how the app and any other needs would have to change for you to change your decision in the last section.* 
+# | Factor | Virtual Machine | App Service |
+
+# |--------|----------------|-------------|
+
+# | Control | Full OS control | Limited to app layer |
+
+# | Cost | Higher | Lower (free tier available) |
+
+# | Scalability | Manual | Built-in auto-scaling |
+
+# | Maintenance | High (OS updates, patches) | Low (managed by Azure) |
+
+# | Deployment | Complex | Simple (GitHub integration) |
+
+# 
+
+# \## My Choice: App Service
+
+# 
+
+# I chose App Service because:
+
+# 1\. The application is a simple Flask web app that does not require OS-level control
+
+# 2\. App Service offers a free tier (F1) which is cost effective
+
+# 3\. Built-in GitHub deployment makes it easy to deploy
+
+# 4\. Auto-scaling is available if needed in the future
+
+# 5\. Less maintenance overhead compared to managing a VM
+
