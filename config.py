@@ -15,10 +15,7 @@ class Config(object):
     SQL_USER_NAME = os.environ.get('SQL_USER_NAME')
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD')
 
-    SQLALCHEMY_DATABASE_URI = (
-    "mssql+pyodbc://{}:{}@{}:1433/{}?driver=ODBC+Driver+17+for+SQL+Server&TrustServerCertificate=yes&Connection+Timeout=30"
-    .format(SQL_USER_NAME, SQL_PASSWORD, SQL_SERVER, SQL_DATABASE)
-)
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'sqlite:///app.db')  # fallback for local
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
