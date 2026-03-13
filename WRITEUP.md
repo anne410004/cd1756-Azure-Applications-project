@@ -1,22 +1,30 @@
-# Article CMS - VM vs App Service Analysis
+# \# Article CMS - VM vs App Service Analysis
 
-# VM vs App Service Comparison
+# 
 
-# Factor	Virtual Machine	App Service
+# \## VM vs App Service Comparison
 
-# Control	Full OS control	Limited to app layer
+# 
 
-# Cost	Higher	Lower (free tier available)
+# | Factor | Virtual Machine | App Service |
 
-# Scalability	Manual	Built-in auto-scaling
+# |--------|----------------|-------------|
 
-# Maintenance	High (OS updates, patches)	Low (managed by Azure)
+# | Control | Full OS control | Limited to app layer |
 
-# Deployment Workflow	Complex, manual setup	Simple (GitHub integration)
+# | Cost | Higher | Lower (free tier available) |
 
-# Availability	Requires manual setup for redundancy	High availability with minimal configuration
+# | Scalability | Manual | Built-in auto-scaling |
 
-# My Choice: App Service
+# | Maintenance | High (OS updates, patches) | Low (managed by Azure) |
+
+# | Deployment Workflow | Complex, manual setup | Simple (GitHub integration) |
+
+# | Availability | Requires manual setup for redundancy | High availability with minimal configuration |
+
+# 
+
+# \## My Choice: App Service
 
 # 
 
@@ -24,31 +32,21 @@
 
 # 
 
-# The application is a simple Flask web app that does not require OS-level control.
+# 1\. The application is a simple Flask web app that does not require OS-level control.
+
+# 2\. App Service offers a free tier (F1), which is cost-effective.
+
+# 3\. Built-in GitHub deployment streamlines the workflow, making deployment and updates easier.
+
+# 4\. Auto-scaling is available if needed in the future.
+
+# 5\. Less maintenance overhead compared to managing a VM.
+
+# 6\. High availability is automatically handled, reducing the need for complex infrastructure management.
 
 # 
 
-# App Service offers a free tier (F1), which is cost-effective.
-
-# 
-
-# Built-in GitHub deployment streamlines the workflow, making deployment and updates easier.
-
-# 
-
-# Auto-scaling is available if needed in the future.
-
-# 
-
-# Less maintenance overhead compared to managing a VM.
-
-# 
-
-# High availability is automatically handled, reducing the need for complex infrastructure management.
-
-# 
-
-# When Would I Change My Decision?
+# \## When Would I Change My Decision?
 
 # 
 
@@ -56,15 +54,11 @@
 
 # 
 
-# If the app needed custom software installations or specific OS configurations.
+# \- If the app needed custom software installations or specific OS configurations.
 
-# 
+# \- If it required running background processes, non-HTTP workloads, or services like Redis or Celery workers directly on the server.
 
-# If it required running background processes, non-HTTP workloads, or services like Redis or Celery workers directly on the server.
-
-# 
-
-# If the team needed full root access to install custom dependencies or handle advanced networking and security configurations.
+# \- If the team needed full root access to install custom dependencies or handle advanced networking and security configurations.
 
 # 
 
