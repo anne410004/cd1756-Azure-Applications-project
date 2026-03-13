@@ -38,3 +38,11 @@
 
 # 5\. Less maintenance overhead compared to managing a VM
 
+# 
+
+# \## When Would I Change My Decision?
+
+# 
+
+# I would consider switching to a Virtual Machine if the application requirements changed significantly. For example, if the app needed custom software installations, specific OS configurations, or required running background processes that App Service does not support, a VM would be more appropriate. Additionally, if the application grew to require more control over networking, security configurations, or needed to handle non-HTTP workloads, a VM would provide the necessary flexibility. If the team needed full root access to install custom dependencies or run services like Redis or Celery workers directly on the server, a VM would be the better choice despite its higher maintenance overhead and cost.
+
