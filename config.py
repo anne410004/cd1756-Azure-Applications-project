@@ -16,9 +16,9 @@ class Config(object):
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD')
 
     SQLALCHEMY_DATABASE_URI = (
-        "mssql+pyodbc://{}:{}@{}:1433/{}?driver=ODBC+Driver+17+for+SQL+Server"
-        .format(SQL_USER_NAME, SQL_PASSWORD, SQL_SERVER, SQL_DATABASE)
-    )
+    "mssql+pyodbc://{}:{}@{}:1433/{}?driver=ODBC+Driver+17+for+SQL+Server&Connection+Timeout=60"
+    .format(SQL_USER_NAME, SQL_PASSWORD, SQL_SERVER, SQL_DATABASE)
+)
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
